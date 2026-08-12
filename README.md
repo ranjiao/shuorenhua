@@ -33,6 +33,14 @@
 
 ## 安装
 
+### 让 agent 自动安装（推荐）
+
+将这段话复制给你的 agent（Claude Code、Codex、Trae Code/Work、OpenClaw 等均可）：
+
+> 请安装 shuorenhua skill：clone https://github.com/&lt;owner&gt;/shuorenhua 到临时目录（如果本地已有这个仓库就直接用），阅读仓库里的 INSTALL.md，按其中的指引把 skill 安装到你当前运行环境对应的 skill 目录，装完告诉我安装路径和触发方式。
+
+[INSTALL.md](INSTALL.md) 会引导 agent 识别自己的 harness、选对目录（含 Trae Code 与 Trae Work 的差异处理）、复制运行时文件并验证。
+
 ### Claude Code
 
 ```bash
@@ -50,7 +58,7 @@ ln -s "$(pwd)/shuorenhua" ~/.claude/skills/shuorenhua
 
 ### 其他 harness
 
-运行时产物就是 `SKILL.md`（外加 `references/` 词表），放进你的 harness 找 skill 的目录即可。
+运行时产物就是 `SKILL.md` 加 `references/` 下的三个文件，放进你的 harness 找 skill 的目录即可。已知路径：Codex `~/.codex/skills/`、OpenClaw `~/.openclaw/skills/`、Trae Code 项目级 `.trae/skills/`（全局国内版 `~/.trae-cn/skills/`）。Trae Work 的目录与 Trae Code 可能不同，见 [INSTALL.md](INSTALL.md) 的探测流程。
 
 ## 用法
 
