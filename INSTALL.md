@@ -15,7 +15,7 @@ shuorenhua/
     └── scenarios.md
 ```
 
-README.md、INSTALL.md、research/ 不是运行时产物，不用复制。
+README.md、INSTALL.md 不是运行时产物，不用复制。
 
 ## 第 0 步：拿到源文件
 
